@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/Merriweather-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/Merriweather-Bold.woff2") format("woff2");
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/Merriweather-Italic.woff2") format("woff2");
+  font-style: italic; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/Merriweather-Regular.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Italic.woff2") format("woff2");
+  font-style: italic; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2"); }
+
+/*
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("/fonts/RobotoSlab-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("/fonts/RobotoSlab-Regular.woff2") format("woff2");
+}
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  overflow-y: scroll;
+  height: 100%;
+  font: 100%/1.5 sans-serif;
+  word-wrap: break-word;
+  margin: 0 auto;
+  padding: 1.5em;
+  -webkit-animation: fadein 1.0s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1.0s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1.0s;
+  /* Internet Explorer */
+  -o-animation: fadein 1.0s;
+  /* Opera < 12.1 */
+  animation: fadein 1.0s; }
+
+html, html[data-theme="light"] {
+  --link-color: rgb(0, 112, 201);
+  --main-background-color: hsl(0, 0%, 90%);
+  --main-text-color: hsl(0, 0%, 20%);
+  --main-red-color: #cd0000; }
+
+html[data-theme="dark"] {
+  --link-color: rgb( 100, 210, 255);
+  --main-background-color: hsl(0, 0%, 20%);
+  --main-text-color: hsl(0, 0%, 85%);
+  --main-red-color: #f00; }
+
+@media (prefers-color-scheme: dark) {
+  html, html[data-theme="dark"] {
+    --link-color: rgb( 100, 210, 255);
+    --main-background-color: hsl(0, 0%, 20%);
+    --main-text-color: hsl(0, 0%, 85%);
+    --main-red-color: #f00; }
+  html[data-theme="light"] {
+    --link-color: rgb(0, 112, 201);
+    --main-background-color: hsl(0, 0%, 90%);
+    --main-text-color: hsl(0, 0%, 20%);
+    --main-red-color: #cd0000; } }
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-family: Merriweather, Georgia, serif;
+  padding: 1em; }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 125%;
+    max-width: 42em; } }
+
+h1, h2, h3, h4 {
+  margin: 1.0rem 0 1.0rem 0;
+  line-height: 1.25;
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+a {
+  color: var(--link-color);
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    text-decoration: underline; }
+
+h1 + p::first-letter {
+  color: var(--main-red-color);
+  float: left;
+  font-size: 360%;
+  padding: 0.075em 0.075em 0 0; }
+
+p {
+  margin: 1.5em 0;
+  line-height: 1.5;
+  text-align: left; }
+  p code {
+    background-color: var(--main-text-color);
+    color: var(--main-background-color);
+    padding: 0.05em 0.2em;
+    border: 1px solid var(--main-background-color); }
+
+pre {
+  background-color: var(--main-text-color);
+  color: var(--main-background-color);
+  padding: 1em 1em 1em 1em; }
+
+ol, ul {
+  margin: 1em; }
+  ol li ol, ol li ul, ul li ol, ul li ul {
+    margin: 0 2em; }
+  ol li p, ul li p {
+    margin: 0; }
+
+dl {
+  font-family: monospace, monospace; }
+  dl dt {
+    font-weight: bold; }
+  dl dd {
+    margin: -1em 0 1em 1em; }
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em; }
+
+blockquote {
+  padding-left: 1em;
+  font-style: italic;
+  border-left: solid 1px #fa6432; }
+
+table {
+  font-size: 1rem;
+  text-align: left;
+  caption-side: bottom;
+  margin-bottom: 2em; }
+  table * {
+    border: none; }
+  table thead, table tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%; }
+  table tr:nth-child(even) {
+    background-color: var(--main-background-color); }
+  table tbody {
+    display: block;
+    max-height: 70vh;
+    overflow-y: auto; }
+  table td, table th {
+    padding: 0.25em; }
+
+table, .highlight > pre, pre.example {
+  max-height: 70vh;
+  margin: 1em 0;
+  padding: 1em;
+  overflow: auto;
+  font-size: 0.85rem;
+  font-family: monospace, monospace;
+  border: 1px dashed var(--main-text-color); }
+
+.title {
+  font-size: 2.5em; }
+
+.subtitle {
+  font-weight: normal;
+  font-size: 0.5em;
+  color: grey; }
+
+.tags {
+  margin-top: 1.5rem;
+  padding-bottom: 1.5em; }
+  .tags li {
+    display: inline;
+    margin-right: 0.5em; }
+
+figure {
+  margin: 1em 0; }
+  figure figcaption {
+    font-family: monospace, monospace;
+    font-size: 0.75em;
+    text-align: center;
+    color: grey; }
+
+.footnote-definition sup {
+  margin-left: -1.5em;
+  float: left; }
+
+.footnote-definition .footnote-body {
+  margin: 1em 0;
+  padding: 0 1em;
+  border: 1px dashed var(--main-text-color);
+  background-color: var(--main-background-color); }
+  .footnote-definition .footnote-body p:only-child {
+    margin: 0.2em 0; }
+
+header {
+  display: flex;
+  justify-content: space-between; }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  header a + a {
+    margin-left: 1rem; }
+
+.posts {
+  margin: 0;
+  list-style: none; }
+  .posts .post a {
+    display: block;
+    padding: 0.5em 0;
+    color: var(--main-text-color); }
+    .posts .post a:hover, .posts .post a:focus, .posts .post a:active {
+      text-decoration: none;
+      background: var(--main-background-color); }
+  .posts .post date {
+    font-family: monospace;
+    font-size: 0.8rem;
+    vertical-align: middle;
+    padding-right: 2rem;
+    color: grey; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

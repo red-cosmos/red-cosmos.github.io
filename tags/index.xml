@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Red Cosmos</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Red Cosmos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>collapse</title>
+      <link>/tags/collapse/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/collapse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>extinction</title>
+      <link>/tags/extinction/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/extinction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>revolution</title>
+      <link>/tags/revolution/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/revolution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>socialism</title>
+      <link>/tags/socialism/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/socialism/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
