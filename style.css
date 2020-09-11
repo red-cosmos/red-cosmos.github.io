@@ -100,12 +100,12 @@ body {
   background-color: var(--main-background-color);
   color: var(--main-text-color);
   font-family: Merriweather, Georgia, serif;
-  padding: 1em; }
+  padding: 0.3em; }
 
 @media (min-width: 768px) {
   html {
     font-size: 125%;
-    max-width: 42em; } }
+    max-width: 40em; } }
 
 h1, h2, h3, h4 {
   margin: 1.0rem 0 1.0rem 0;
@@ -122,7 +122,13 @@ h1 + p::first-letter {
   color: var(--main-red-color);
   float: left;
   font-size: 360%;
-  padding: 0.075em 0.075em 0 0; }
+  padding: 0.075em 0.075em 0 0;
+  -webkit-font-feature-settings: "kern" 0;
+  font-feature-settings: "kern" 0;
+  -webkit-font-kerning: none;
+  font-kerning: none;
+  position: relative;
+  -webkit-font-smoothing: antialiased; }
 
 p {
   margin: 1.5em 0;
